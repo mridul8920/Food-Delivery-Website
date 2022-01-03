@@ -1,0 +1,238 @@
+CSS Reset
+*{
+    margin: 0;
+    padding: 0;
+}
+html{
+    scroll-behavior: smooth;
+}
+/* Navigation bar */
+#navbar{
+    display: flex;
+    align-items: center;
+    position: sticky;
+    top: 0px;
+}
+/* Navigation bar: Logo and Image */
+/* #logo{
+    margin: 34px 45px;
+} */
+#logo img{
+    margin: 1px 40px;
+    height: 80px;
+}
+/* Navigation bar: List styling */
+#navbar ul{
+    display: flex;
+    font-family: 'Baloo Bhai', cursive;
+}
+#navbar::before{
+    content: "";
+    background-color: black;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.4;
+}
+#navbar ul li{
+    list-style: none;
+    font-size: 1.3rem;
+} 
+#navbar ul li a{
+    color: white;
+    display: block;
+    padding: 2px 22px;
+    border-radius: 20px;
+    text-decoration: none;
+}
+#navbar ul li a:hover{
+    color: rgb(209, 170, 170);
+    background-color: white;
+}
+/* Home section */
+#home{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 3px 130px;
+    height: 450px;
+    }
+#home::before{
+    content: "";
+    position: absolute;
+    background: url(https://cdn.pixabay.com/photo/2017/02/15/10/39/salad-2068220_960_720.jpg) no-repeat center center/cover;
+    height: 104%;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.92;
+}
+#home h1{
+    color: rgb(234 205 153);
+    text-align: center;
+    font-family: 'Baloo Bhai', cursive;
+}
+#home p{
+    color: #c6f3ea;
+    font-size: 1.1rem;
+    font-weight: bold;
+    font-family: 'Bree Serif', serif;
+}
+/* services section */
+#services{
+    /* margin: 34px; */
+    display: flex;
+    margin-bottom: 43px;
+}
+#services .box{
+    border: 2px solid brown;
+    padding: 34px;
+    margin-left: 20px;
+    margin-right: 20px;
+    border-radius: 23px;
+    background-color: rgb(233, 173, 173);
+    
+}
+#services .box img{
+    height: 160px;
+    display: block;
+    margin: auto;
+    border-radius: 15px;
+}
+#services .box p{
+    text-align: center;
+    font-family:Georgia, 'Times New Roman', Times, serif
+}
+#services .box .h-secondary{
+    background: none;
+    color: black;
+}
+
+
+#services-container .h-primary{
+    padding-top: 55px;
+    color: rgb(126, 86, 41);
+}
+/* Clients section */
+#client-section{
+    height: 260px;
+    
+}
+#client-section::before{
+content:"";
+position: absolute;
+background: url(https://cdn.pixabay.com/photo/2017/09/22/21/21/table-2777081_960_720.jpg) no-repeat center center/cover;
+width: 100%;
+height: 50%;
+z-index:-1;
+opacity: 0.7;
+}
+#client-section .h-primary{
+    color: rgb(152 92 50);
+    font-size: 55px;
+    font-family: 'Times New Roman', Times, serif;
+}
+#clients{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.client-item{
+    padding: 34px;
+}
+.client-item img{
+    height: 140px;
+
+}
+/* Contact Section */
+/* #contact{
+     position: relative; 
+   
+} */
+#contact::before{
+    content: "";
+    position: absolute;
+    background: url(https://cdn.pixabay.com/photo/2019/05/10/13/28/contact-us-4193523_960_720.jpg) no-repeat center center/cover;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    opacity: 0.7;
+}
+#contact-box input, #contact-box textarea{
+    width: 100%;
+    padding: 8px;
+    margin: 5px;
+    border-radius: 10px;
+    font-size: 1.1rem;
+    font-weight: bold;
+    color: red;
+}
+#contact-box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#contact-box form{
+    width: 40%;
+}
+#contact .h-primary{
+    color: rgb(152 92 50);
+    font-size: 55px;
+    font-family: 'Times New Roman', Times, serif;
+}
+#contact-box label{
+    font-size: 25px;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: bold;
+}
+/* Footer */
+.center{
+    text-align: center;
+    background: black;
+    color: white;
+    padding: 11px 20px;
+}
+
+
+/* Utility classes */
+.h-primary{
+    font-size: 2.8rem;
+    padding: 1px;
+    margin-bottom: 1%;
+    text-align: center;
+    font-family: 'Baloo Bhai', cursive;
+}
+.h-secondary{
+    font-size: 1.9rem;
+    text-align: center;
+
+}
+.btn{
+    padding: 7px 20px;
+    border: 2px solid rgb(57, 109, 66);
+    border-radius: 12px;
+    margin:  17px;
+    font-family: 'Baloo Bhai', cursive;
+    background-color: rgb(230, 171, 94);
+    color: white;
+    font-weight: bolder;
+    font-size: 15px;
+}
+.btn:hover{
+   background-color: rgb(219, 92, 92);
+   color: white;
+    cursor: pointer;
+}
+#btn{
+    border-radius: 10px;
+    color: black;
+    font-size: 1.1rem;
+    font-weight: bold;
+    margin-bottom: 9px;
+}
+#btn:hover{
+    background-color: black;
+    color: white;
+    cursor: pointer;
+}
